@@ -1,0 +1,65 @@
+.sidebar{
+    flex:0.3;
+    border-right: 1px solid whitesmoke;
+    background-color: #fff;
+    height: 100vh;
+}
+
+.sidebar__search{
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid whitesmoke;
+    position: sticky;
+    top:60px;
+    z-index: 10;
+}
+
+.sidebar__search > input{
+    padding: 10px;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    width: 100%;
+    background-color: #fff;
+    outline: none;
+}
+
+.sidebar__search > p{
+    font-size: 14px;
+    color:gray;
+}
+
+.sidebar__footer{
+    display: flex;
+    position: fixed;
+    bottom:0px;
+    padding-left: 0;
+    z-index: 1;
+    background-color: #fff;
+    list-style: none;
+    border-top: 1px solid whitesmoke;
+    border-right:1px solid whitesmoke;
+    align-items: center;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.sidebar__listItem, .sidebar__selectedListItem{
+    padding: 15px;
+    cursor: pointer;
+    color:#444444;
+    text-align: center;
+    border-right: 1px solid whitesmoke;
+    font-size: 12px;
+}
+
+.sidebar__selectedListItem{
+    color: #FF5722;
+}
+
+.sidebar__listSettings{
+    padding: 10px 20px;
+    margin-left: auto;
+}

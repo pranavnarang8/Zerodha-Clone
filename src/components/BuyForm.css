@@ -1,0 +1,264 @@
+.buyForm{
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    width:600px;
+    opacity: 1;
+    z-index: 20;
+    position: absolute;
+    top:100px;
+    left:0;
+    right:0;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.buyForm__header{
+    background-color: #4184F3;
+    color: white;
+    display: flex;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    flex-direction: column;
+}
+
+.buyForm__sellHeader{
+    background-color: #FF5722;
+    color: white;
+    display: flex;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    flex-direction: column;
+}
+
+.buyForm__header1{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    padding-top: 15px;
+}
+
+
+
+.buyForm__header1 > h3{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.buyForm__header1 > h3 > span{
+    font-size: 9px;
+    padding-left: 3px;
+    padding-right: 10px;
+}
+
+.buyForm__headerIcons{
+    color: white !important;
+}
+
+.buyForm__header2{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.buyForm__header2 > input{
+    margin-right: 5px;
+    margin-left: 20px;
+    color:#fff;
+    cursor: pointer;
+}
+
+.buyForm__header2 > span{
+    font-size: 12px;
+}
+
+.buyForm__subHeader{
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    border-left: 2px solid whitesmoke;
+    border-right: 2px solid whitesmoke;
+}
+
+.buyForm__options{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    font-size: 14px;
+}
+
+.buyForm__options > p{
+    padding: 10px 20px;
+    color: #9b9b9b;
+    font-size: 12px;
+}
+
+.buyForm__selectedBuy{
+    color: #4184F3;
+    border-bottom: 3px solid #4184F3 ;
+}
+
+.buyForm__selectedSell{
+    color:#FF5722;
+    border-bottom: 3px solid #FF5722;
+}
+
+.buyForm__tags{
+    margin-right: 20px;
+    padding-left: 0 !important;
+    font-size: 10px !important;
+}
+
+.buyForm__tags > p{
+    font-size: 10px;
+}
+
+.buyForm__tags:hover{
+    color:#FF5722
+}
+
+.buyForm__body{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    border-right: 2px solid whitesmoke;
+}
+
+.buyForm__bodyTop{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.buyForm__bodyTop > div{
+    flex: 0.33;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.buyForm__bodyMain{
+    display: flex;
+    padding-left: 20px;
+}
+
+.buyForm__bodyMain>div{
+    flex:0.33;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.buyForm__bodyMain>div>input{
+    padding: 15px 0px;
+    padding-left: 20px;
+    width: 80%;
+    border-radius: 5px;
+    outline: none;
+    border:1px solid #eee;
+    color:#444;
+}
+
+.buyForm__bodyMain>div>label{
+    margin-left: 20px;
+    text-align: left;
+    margin-bottom: -12px;
+    z-index: 2;
+    background-color: #fff;
+    padding: 5px;
+    margin-right: auto;
+    color:#444;
+    font-size: 12px;
+}
+
+.buyForm__bodyBottom{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 10px;
+    /* padding-right: 20px; */
+}
+
+.buyForm__bodyBottom > div{
+   flex:0.33;
+   text-align: left;
+   padding-bottom: 20px;
+   color:#444;
+   font-size: 12px;
+}
+
+.buyForm__footer{
+    background-color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid whitesmoke;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.buyForm__footerLeft{
+    display: flex;
+    flex:0.4;
+    justify-content: space-between;
+}
+
+.buyForm__footerLeft > p{
+    color:#9b9b9b;
+    font-size: 12px;
+}
+
+.buyForm__footerLeft > p >span{
+    color:#4184F3;
+    font-size: 12px;
+}
+
+.buyForm__footerRight{
+    flex:0.34;
+    text-align: left;
+}
+
+.buyForm__footerRight > button{
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 3px;
+    outline: none;
+    
+    color:white;
+    
+}
+
+.buyForm__buyButton{
+    background-color: #4184F3;
+    border: 1px solid #4184F3;
+}
+
+.buyForm__sellButton{
+    background-color: #FF5722;
+    border: 1px solid #FF5722;
+}
+
+.buyForm__footerRight > button:nth-child(1):hover{
+    opacity: 0.8;
+}
+
+.buyForm__footerRight> .buyForm__cancel{
+    margin-left: 10px;
+    background-color: #fff;
+    color: #444444;
+    border:  1px solid #444444,
+}
+
+.buyForm__cancel:hover{
+    background-color: #9b9b9b;
+    border: 1px solid #9b9b9b;
+    color: #fff;
+}

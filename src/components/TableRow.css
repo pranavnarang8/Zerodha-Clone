@@ -1,0 +1,73 @@
+.tableRow{
+    display: flex;
+    justify-content: space-between;
+    flex:1;
+    transition: 0.1s ease-in;
+    /* max-height: 35px; */
+    overflow-y: hidden;
+}
+
+.table__instrument{
+    flex:0.2;
+    padding-left: 10px;
+    text-align: left;
+    border-right: 2px whitesmoke solid;
+    display: flex;
+    align-items: center;
+    display: flex;
+    
+}
+
+.table__avgCost, .table__LTP, .table__currValue, .table__pl, .table__netChg{
+    flex:0.12;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.table__LTP{
+    border-right: 2px whitesmoke solid;
+}
+
+.table__quantity, .table__dayChg{
+    flex:0.1;
+    text-align: center;
+}
+
+.tableRow > td{
+    font-size: 14px;
+    color:black;
+    font-weight: 400;
+    padding: 10px;
+    border-bottom: 2px solid whitesmoke;
+    cursor: pointer; 
+    position: sticky;
+}
+
+.tableRow__hover{
+    margin-left: auto;
+    display: flex;
+}
+
+.tableRow__hover > .MuiSvgIcon-root{
+    font-size: 14px !important;
+    color:#4184F3 !important;
+    border: 1px solid #4184F3 !important;
+    padding: 0px 4px;
+    border-radius: 2px;
+}
+
+.tableRow__hover > button{
+    padding:  5px 11px;
+    color:#fff;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 10px;
+    background-color: #ff5722;
+}
+
+.tableRow__hover > button:hover{
+    opacity: 0.8;
+}
+

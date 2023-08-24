@@ -1,0 +1,125 @@
+.scrip{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.scrip__right{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+
+.scrip__rightFixed{
+    display: flex;
+    position: absolute;
+    right: 0px;
+    align-items: center;
+}
+
+.scrip__rightPriceContainer, .scrip__rightSymbolContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    align-items: center;
+    width: 80px;
+}
+
+.scrip__rightPriceContainer >p, .scrip__rightSymbolContainer >p{
+    font-size: 12px !important;
+}
+
+.scrip__left{
+    padding: 15px;
+}
+
+.scrip__left > h3{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.scrip__leftgreen{
+    color:green;
+}
+
+.scrip__leftred{
+    color:#DF514C;
+}
+/* .scrip__rightFixed > p{
+    margin-left: 10px;
+    margin-right: 10px;
+} */
+
+.scrip__rightMove{
+    color:#444444;
+    font-weight: 300;
+    opacity: 0.65;
+
+}
+
+.scrip__rightPercent{
+    color:#444444;
+    font-weight: 300;
+   
+}
+
+
+.scrip:hover{
+    background-color: whitesmoke;
+}
+
+.scrip__rightHover{
+    z-index: 5;
+    position: absolute;
+    right: 0px;
+    display: flex;
+}
+
+.scrip__rightHover > button{
+    padding:  7px 12px;
+    color:#fff;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 11px !important;
+}
+
+.scrip__buyButton{
+    background-color: #4184F3;
+}
+
+.scrip__sellButton{
+    background-color: #ff5722;
+}
+
+.scrip__actionButtons{
+    background-color: white !important;
+    border: 0.5px solid #444444 !important;
+    border-radius: 5px;
+    color: #444444 !important;
+    padding: 0px 3px !important;
+    font-size: 11px !important;
+}
+
+.scrip__actionButtons > .MuiSvgIcon-root{
+    font-weight: 100 !important;
+}
+.scrip__buyButton:hover, .scrip__sellButton:hover{
+    opacity: 0.8;
+}
+.scrip__actionButtons:hover{
+    background-color: #444444 !important;
+    opacity: 0.5 !important;
+    color: white !important;
+}
+
+.scrip_action{
+    padding: 5px 6px !important;
+    font-size: 14px !important;
+}
